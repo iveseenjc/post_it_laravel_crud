@@ -1,0 +1,59 @@
+@use 'app';
+@use 'variables';
+
+fieldset {
+    width: max-content;
+    padding: 0;
+    margin: auto;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        background-color: variables.$headerColor;
+        padding: 1rem;
+        color: white;
+        grid-column: span 4;
+    }
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+
+    button {
+        grid-area: 4 / 2;
+        padding: 1rem;
+    }
+
+    input[type="radio"] {
+        display:none;
+
+        & + * {
+            filter: grayscale(85%);
+            transition: all 500ms ease;
+        }
+
+        &:hover + * {
+            filter: grayscale(25%);
+            scale: 110%;
+            border: 2px solid variables.$selectedColor;
+            z-index: 10;
+            transition: scale 500ms ease;
+        }
+
+        &:checked + * {
+            filter: none;
+            scale: 100%;
+            border: 3px solid variables.$selectedColor;
+            border-radius: 5px;
+        }
+    }
+
+    img {
+        width: 100px; 
+        border: 2px solid transparent; 
+        cursor: pointer;
+    }
+}

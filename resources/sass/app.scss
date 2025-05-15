@@ -1,0 +1,140 @@
+@use 'variables';
+
+@function text-contrast($color) {
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color);
+    $luminance: (0.299 * $r + 0.587 * $g + 0.114 * $b) / 255;
+  
+    @if $luminance > 0.5 {
+      @return black;
+    } 
+    @else {
+      @return white;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: variables.$bodyColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100%;
+    margin: 0;
+}
+
+header {
+    background-color: variables.$headerColor;
+    height: variables.$headerHeight;
+    color: white;
+    padding: 0 3%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    h1 {
+
+        img {
+            margin-right: 1rem;
+        }
+
+        display: flex;
+        align-items: center;
+        text-align: center; 
+        margin: 0;
+    }
+}
+
+nav {
+    display: flex;
+    width: max-content;
+    align-items: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin-left: 2rem;
+
+        &:hover {
+            filter: brightness(85%);
+        }
+    }
+
+    .avatar-pick {
+        margin: 0;
+    }
+
+    .profile-picture {
+        width: 40px; 
+        height: 40px; 
+        border-radius: 50%; 
+        object-fit: cover;
+    }
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {    
+    background-color: variables.$footerColor;
+    height: variables.$footerHeight;
+    color: white;
+    padding: 0 3%;
+}
+
+button {
+    background-color: variables.$mainColor;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(85%);
+    }
+
+    &:active {
+        filter: brightness(75%);
+    }
+}
+
+.logout-form {
+    margin: 0; 
+    padding: 0;
+    display: inline-block;
+}
+
+.logout-btn {
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.5em;
+}
+
+#greeting-user {
+    border-left: 1px solid white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 2rem
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(../fonts/Outfit-VariableFont_wght.ttf);
+}

@@ -1,0 +1,97 @@
+@use 'app';
+@use 'variables';
+
+main {
+    width: 65%;
+    margin: auto;
+}
+
+textarea {
+    font-size: 1.5rem;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+
+    form {
+        button {
+            font-size: 1.5rem;
+            border-radius: 10rem 50rem 50rem 50rem;
+            padding: 0.5rem 1rem;
+        }
+    }
+    
+    .profile-picture {
+        width: 3.5rem;
+        margin: 1rem;
+        margin-top: 0;
+    }
+}
+
+.recent-posts {
+    overflow-y: scroll;
+    list-style-type: none;
+    padding: 0 1rem;
+    border: 1px solid gray;
+    max-height: 35dvh;
+
+    h2 {
+        border-bottom: 1px solid gray;
+        padding: 1rem;
+        margin-top: 0;
+    }
+}
+
+.post {
+    position: relative;
+    border-bottom: 1px solid gray;
+    padding: 1rem;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+
+        .profile-picture {
+            width: 2rem;
+            border: 2px solid variables.$mainColor;
+            border-radius: 50rem;
+            margin-right: 10px;
+        }
+    }
+
+    button {
+        font-size: 1.3rem;
+        border-radius: 0.5rem;
+    }
+
+    small + small {
+        border-left: 1px solid gray;
+        padding-left: 0.5rem;
+        margin-left: 0.5rem;
+    }
+}
+
+.modify-buttons {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.edit-button {
+    background-color: variables.$selectedColor;
+    margin-right: 1rem;
+}
+
+.modify-form {
+    margin: 0;
+}
+
+.delete-button {
+    background-color: variables.$errorColor;
+}

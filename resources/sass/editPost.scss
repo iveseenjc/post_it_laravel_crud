@@ -1,0 +1,32 @@
+@use 'auth';
+@use 'variables';
+
+fieldset {
+    width: 50%;
+}
+
+textarea {
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+
+    button {
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+.confirm-edit {
+    background-color: variables.$selectedColor;
+}
+
+.cancel-edit {
+    background-color: variables.$errorColor;
+}

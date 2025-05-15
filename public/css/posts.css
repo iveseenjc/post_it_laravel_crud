@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  font-family: Outfit, Arial, Helvetica, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #dce6f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 100%;
+  margin: 0;
+}
+
+header {
+  background-color: #38434f;
+  height: 5rem;
+  color: white;
+  padding: 0 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+header h1 img {
+  margin-right: 1rem;
+}
+
+nav {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+nav a:hover {
+  filter: brightness(85%);
+}
+
+nav .avatar-pick {
+  margin: 0;
+}
+
+nav .profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  background-color: #56687a;
+  height: 3rem;
+  color: white;
+  padding: 0 3%;
+}
+
+button {
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(85%);
+}
+
+button:active {
+  filter: brightness(75%);
+}
+
+.logout-form {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.logout-btn {
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: 0.5em;
+}
+
+#greeting-user {
+  border-left: 1px solid white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 2rem;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(/fonts/Outfit-VariableFont_wght.ttf?1b443ee3b6993db873f1faedffe56133);
+}
+
+main {
+  width: 65%;
+  margin: auto;
+}
+
+textarea {
+  font-size: 1.5rem;
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+fieldset form button {
+  font-size: 1.5rem;
+  border-radius: 10rem 50rem 50rem 50rem;
+  padding: 0.5rem 1rem;
+}
+
+fieldset .profile-picture {
+  width: 3.5rem;
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.recent-posts {
+  overflow-y: scroll;
+  list-style-type: none;
+  padding: 0 1rem;
+  border: 1px solid gray;
+  max-height: 35dvh;
+}
+
+.recent-posts h2 {
+  border-bottom: 1px solid gray;
+  padding: 1rem;
+  margin-top: 0;
+}
+
+.post {
+  position: relative;
+  border-bottom: 1px solid gray;
+  padding: 1rem;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post span {
+  display: flex;
+  align-items: center;
+}
+
+.post span .profile-picture {
+  width: 2rem;
+  border: 2px solid #0a66c2;
+  border-radius: 50rem;
+  margin-right: 10px;
+}
+
+.post button {
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+}
+
+.post small + small {
+  border-left: 1px solid gray;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.modify-buttons {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.edit-button {
+  background-color: #83941f;
+  margin-right: 1rem;
+}
+
+.modify-form {
+  margin: 0;
+}
+
+.delete-button {
+  background-color: #b24020;
+}
+
