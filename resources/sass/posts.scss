@@ -11,6 +11,12 @@ textarea {
 }
 
 fieldset {
+    border: 1rem solid variables.$selectedColor;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-color: gray;
+    border-bottom-color: gray;
+    
     display: flex;
     justify-content: center;
     align-items: flex-start;  
@@ -34,8 +40,12 @@ fieldset {
     overflow-y: scroll;
     list-style-type: none;
     padding: 0 1rem;
-    border: 1px solid gray;
     max-height: 35dvh;
+    border: 1rem solid variables.$selectedColor;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-color: gray;
+    border-bottom-color: gray;
 
     h2 {
         border-bottom: 1px solid gray;
