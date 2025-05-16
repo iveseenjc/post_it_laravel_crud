@@ -124,106 +124,31 @@ button:active {
 }
 
 main {
-  width: 65%;
-  margin: auto;
-}
-
-textarea {
-  font-size: 1.5rem;
-}
-
-fieldset {
-  border: 1rem solid #0a66c2;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-color: gray;
-  border-bottom-color: gray;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-fieldset form button {
-  font-size: 1.5rem;
-  border-radius: 10rem 50rem 50rem 50rem;
-  padding: 0.5rem 1rem;
-}
-
-fieldset .profile-picture {
-  width: 4rem;
-  margin: 1rem;
-  margin-top: 0;
-  border: 5px solid #0a66c2;
-  border-radius: 50rem;
-}
-
-.recent-posts {
-  overflow-y: scroll;
-  list-style-type: none;
-  padding: 0 1rem;
-  max-height: 35dvh;
-  border: 1rem solid #83941f;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-color: gray;
-  border-bottom-color: gray;
-}
-
-.recent-posts h2 {
-  border-bottom: 1px solid gray;
-  padding: 1rem;
-  margin-top: 0;
-}
-
-.post {
-  position: relative;
-  border-bottom: 1px solid gray;
-  padding: 1rem;
-}
-
-.post:last-child {
-  border-bottom: none;
-}
-
-.post span {
-  display: flex;
-  align-items: center;
-}
-
-.post span .profile-picture {
-  width: 2rem;
-  border: 2px solid #83941f;
-  border-radius: 50rem;
-  margin-right: 10px;
-}
-
-.post button {
-  font-size: 1.3rem;
-  border-radius: 0.5rem;
-}
-
-.post small + small {
-  border-left: 1px solid gray;
-  padding-left: 0.5rem;
-  margin-left: 0.5rem;
-}
-
-.modify-buttons {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-}
-
-.edit-button {
-  background-color: #83941f;
-  margin-right: 1rem;
-}
-
-.modify-form {
+main h1 {
+  background-color: #0a66c2;
+  color: white;
+  font-size: 8rem;
   margin: 0;
+  padding: 1rem;
+  padding-right: 5rem;
+  border-top-right-radius: 50rem;
+  border-bottom-right-radius: 50rem;
 }
 
-.delete-button {
-  background-color: #b24020;
+main h2 {
+  background-color: #83941f;
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  padding: 1rem;
+  padding-right: 5rem;
+  border-bottom-right-radius: 50rem;
+  font-weight: bolder;
 }
 

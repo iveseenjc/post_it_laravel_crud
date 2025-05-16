@@ -17,5 +17,6 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/avatarPick.scss', 'public/css')
     .sass('resources/sass/posts.scss', 'public/css')
     .sass('resources/sass/editPost.scss', 'public/css')
+    .sass('resources/sass/welcome.scss', 'public/css')
     .copyDirectory('resources/fonts', 'public/fonts')
     .copyDirectory('resources/images', 'public/images');

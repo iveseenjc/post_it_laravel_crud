@@ -19474,10 +19474,21 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/welcome.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/welcome.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/auth.scss ./resources/sass/avatarPick.scss ./resources/sass/posts.scss ./resources/sass/editPost.scss ***!
-  \************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/auth.scss ./resources/sass/avatarPick.scss ./resources/sass/posts.scss ./resources/sass/editPost.scss ./resources/sass/welcome.scss ***!
+  \******************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19486,7 +19497,8 @@ __webpack_require__(/*! C:\xampp\htdocs\jc-hehe.com\crud_project\resources\sass\
 __webpack_require__(/*! C:\xampp\htdocs\jc-hehe.com\crud_project\resources\sass\auth.scss */"./resources/sass/auth.scss");
 __webpack_require__(/*! C:\xampp\htdocs\jc-hehe.com\crud_project\resources\sass\avatarPick.scss */"./resources/sass/avatarPick.scss");
 __webpack_require__(/*! C:\xampp\htdocs\jc-hehe.com\crud_project\resources\sass\posts.scss */"./resources/sass/posts.scss");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\jc-hehe.com\crud_project\resources\sass\editPost.scss */"./resources/sass/editPost.scss");
+__webpack_require__(/*! C:\xampp\htdocs\jc-hehe.com\crud_project\resources\sass\editPost.scss */"./resources/sass/editPost.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\jc-hehe.com\crud_project\resources\sass\welcome.scss */"./resources/sass/welcome.scss");
 
 
 /***/ })

@@ -11,7 +11,7 @@ textarea {
 }
 
 fieldset {
-    border: 1rem solid variables.$selectedColor;
+    border: 1rem solid variables.$mainColor;
     border-top-width: 1px;
     border-bottom-width: 1px;
     border-top-color: gray;
@@ -30,9 +30,12 @@ fieldset {
     }
     
     .profile-picture {
-        width: 3.5rem;
+        width: 4rem;
         margin: 1rem;
         margin-top: 0;
+        border: 5px solid variables.$mainColor;
+
+        border-radius: 50rem;
     }
 }
 
@@ -69,7 +72,7 @@ fieldset {
 
         .profile-picture {
             width: 2rem;
-            border: 2px solid variables.$mainColor;
+            border: 2px solid variables.$selectedColor;
             border-radius: 50rem;
             margin-right: 10px;
         }

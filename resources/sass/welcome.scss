@@ -1,0 +1,33 @@
+@use 'app';
+@use 'variables';
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    h1 {
+        background-color: variables.$mainColor;
+        color: white;
+        font-size: 8rem;
+        margin: 0;
+        padding: 1rem;
+        padding-right: 5rem;
+
+        border-top-right-radius: 50rem;
+        border-bottom-right-radius: 50rem;
+    }
+
+    h2 {
+        background-color: variables.$selectedColor;
+        color: white;
+        font-size: 2rem;
+        margin: 0;
+        padding: 1rem;
+        padding-right: 5rem;
+
+        border-bottom-right-radius: 50rem;
+        font-weight: bolder;
+    }
+}
